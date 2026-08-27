@@ -1,0 +1,34 @@
+{
+  "name": "rosette",
+  "version": "1.0.0",
+  "description": "ROSETTE — 8bit game",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^44.0.0",
+    "electron-builder": "^26.15.3"
+  },
+  "build": {
+    "appId": "com.rosette.game",
+    "productName": "ROSETTE",
+    "directories": {
+      "output": "dist"
+    },
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    },
+    "files": [
+      "main.js",
+      "rosette.html",
+      "package.json"
+    ]
+  }
+}
